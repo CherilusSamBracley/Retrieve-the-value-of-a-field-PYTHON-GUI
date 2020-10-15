@@ -1,0 +1,19 @@
+from tkinter import*
+
+window=Tk()
+
+field=Entry(window)
+field.pack()
+
+
+def show_value():
+    result=field.get()
+    value=Label(window,text=result)
+    value.pack()
+
+
+button_catch=Button(window,text="SHOW VALUE", command=show_value)
+button_catch.pack()
+
+
+window.mainloop()
